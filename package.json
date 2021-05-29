@@ -1,13 +1,11 @@
 {
   "name": "@wvcode/algo",
   "description": "Biblioteca com rotinas para escrita de algoritmos",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "index.js",
   "dependencies": {
     "@wvcode/utils": "^1.0.0",
-    "config": "^3.3.6",
-    "lodash": "^4.17.21",
     "readline-sync": "^1.4.10"
   }
 }
