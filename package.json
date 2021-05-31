@@ -1,9 +1,11 @@
 {
   "name": "@wvcode/algo",
-  "description": "Biblioteca com rotinas para escrita de algoritmos",
-  "version": "1.0.0",
+  "description": "ALGO é um módulo javascript que se destina ao ensino de algoritmos, provendo as funcionalidades básicas de leitura e escrita de valores (read e write) de maneira similar a outras linguagens de programação.",
+  "version": "1.0.1",
   "license": "MIT",
   "main": "index.js",
+  "repository": "https://github.com/wvcode/algo.git",
+  "homepage": "https://github.com/wvcode/algo.git#readme",
   "dependencies": {
     "@wvcode/utils": "^1.0.0",
     "readline-sync": "^1.4.10"
