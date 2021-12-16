@@ -1,7 +1,7 @@
 {
   "name": "@wvcode/algo",
   "description": "ALGO é um módulo javascript que se destina ao ensino de algoritmos, provendo as funcionalidades básicas de leitura e escrita de valores (read e write) de maneira similar a outras linguagens de programação.",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "MIT",
   "main": "index.js",
   "repository": "https://github.com/wvcode/algo.git",

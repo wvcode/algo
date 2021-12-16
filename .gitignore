@@ -3,3 +3,4 @@
 /logs
 *.lock
 *.log
+*-lock.json

@@ -1,14 +1,22 @@
 const readlinesync = require('readline-sync')
 
+process.stdin.setEncoding('utf8')
+
+function setCharset(enc) {
+  process.stdin.setEncoding(enc)
+}
+
 function read(promptString) {
-  let resultado = readlinesync.question(promptString)
+  write(promptString)
+  let resultado = readlinesync.question()
   return resultado
 }
 
 function readNumber(promptString) {
   let resultado = null
   do {
-    resultado = readlinesync.question(promptString)
+    write(promptString)
+    resultado = readlinesync.question()
   } while (isNaN(resultado))
   return resultado
 }
@@ -32,3 +40,4 @@ exports.readNumber = readNumber
 exports.write = write
 exports.writeln = writeln
 exports.overwrite = overwrite
+exports.setCharset = setCharset

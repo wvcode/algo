@@ -1,4 +1,3 @@
-const algo = require('../index')
+const { read } = require('../index')
 
-let a = algo.read('Digite seu nome:')
-console.log(a)
+let a = read('Digite seu nome:')

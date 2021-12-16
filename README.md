@@ -41,9 +41,9 @@ Criar o seu primeiro algoritmo em Javascript é muito simples! É só seguir os 
 - Copie o seguinte conteúdo na janela do notepad:
 
 ```javascript
-const algo = require('@wvcode/algo')
+const { write } = require('@wvcode/algo')
 
-algo.write('Hello, World!!!')
+write('Hello, World!!!')
 ```
 
 - Salve o conteudo do arquivo e feche o notepad
@@ -59,6 +59,45 @@ Hello, World!
 Pronto! Você escreveu o seu primeiro algoritmo em Javascript!!!
 
 Agora é só continuar praticando!!!
+
+## Lista Completa das Funções Disponíveis
+
+### read
+
+A função read permite que você leia informações do teclado do computador.
+
+```javascript
+const { read, write } = require('@wvcode/algo')
+
+let nome = read('Digite o seu nome: ')
+
+write('Olá, ', nome)
+```
+
+### readNumber
+
+A função readNumber permite que você leia informações numéricas do teclado do computador. Se, após teclar ENTER, o valor digitado não for um número válido, ele pede para que seja digitado novamente.
+
+```javascript
+const { readNumber, write } = require('../index')
+
+let numero = readNumber('Digite um número: ')
+
+write('O número digitado foi:', numero)
+```
+
+### write e writeln
+
+As funções write e writeln escrevem na tela, sendo a única diferença no writeln que ele escreve e pula para a próxima linha.
+
+```javascript
+const { readNumber, write } = require('../index')
+
+let numero = readNumber('Digite um número: ')
+
+writeln('O número digitado foi:', numero)
+write('Este texto está na próxima linha.')
+```
 
 **Bom código!!!**
 
