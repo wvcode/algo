@@ -1,11 +1,11 @@
 const readlinesync = require('readline-sync')
 
-exports.read = function (promptString) {
+function read(promptString) {
   let resultado = readlinesync.question(promptString)
   return resultado
 }
 
-exports.readNumber = function (promptString) {
+function readNumber(promptString) {
   let resultado = null
   do {
     resultado = readlinesync.question(promptString)
@@ -13,16 +13,22 @@ exports.readNumber = function (promptString) {
   return resultado
 }
 
-exports.write = function (...message) {
+function write(...message) {
   process.stdout.write(message.join(' '))
 }
 
-exports.writeln = function (...message) {
+function writeln(...message) {
   process.stdout.write(message.join(' '))
   process.stdout.write('\n')
 }
 
-exports.overwrite = function (...message) {
+function overwrite(...message) {
   process.stdout.write(message.join(' '))
   process.stdout.write('\r')
 }
+
+exports.read = read
+exports.readNumber = readNumber
+exports.write = write
+exports.writeln = writeln
+exports.overwrite = overwrite
